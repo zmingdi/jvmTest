@@ -3,6 +3,9 @@ package com.mingdi.threadpool;
 import java.util.Random;
 import java.util.concurrent.Callable;
 
+/**
+ * IO focus job, stimulate blocking io and no check flag interval
+ */
 public class IOTask implements Callable<Integer> {
   private Integer taskId;
   public Integer workload;
